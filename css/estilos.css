@@ -1,0 +1,115 @@
+
+
+
+/*--header--*/
+.navbar {
+	margin-bottom: 0px;
+}
+.jumbotron{
+
+	background: #428BCA;
+	color: #fff;
+	padding: 50px;
+}
+.jumbotron .titulo-blog{
+	font-size: 70px;
+	text-align: center;
+}
+.logo{
+	margin-bottom: 0px;
+
+}
+
+/*--POST--*/
+.main{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.post {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid:#999;
+}
+
+.post .post-title a {
+	color: #333;
+}
+
+.post .thumb {
+	margin-right: 10px;
+	width: 50%;
+}
+
+.post .thumb img{
+	width: 100%;
+}
+
+.post .contenedor-botones{
+	width: 100%;
+}
+
+/* -- media querie --*/
+@media screen and (max-width: 768px){
+	.post .thumb {
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0px;
+	}
+}
+
+
+
+
+#hechoInicial{
+	
+	
+	
+	text-align: justify-all;
+	
+}
+
+
+#hecho{
+	
+	
+	
+	text-align: justify-all;
+	
+}
+
+#deslizar{
+	font-size: 30px;
+	padding:0px;
+	width: 300px;
+	text-align:center;
+	background-color:#e5eecc;
+	border:solid 5px red;
+
+}
+#panel
+{
+	display:none;
+	width: 300px;
+	font-size: 30px;
+	background-color: red;
+	padding:0px;
+	text-align: center;
+	border: 5px solid #000000;}
+
+
+
+.text{
+   display: inline;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 24px;     /* fallback */
+   max-height: 48px;      /* fallback */
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+.text a {
+    position: absolute;
+}

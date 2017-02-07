@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+	<html lang="es">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimum-scale=1">
+
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+			<title>reto 2</title>
+			<script type="text/javascript" src="js/cambiar-fondo.js"></script>
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script type="text/javascript" src="js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="js/main.js"></script>
+			<script type="text/javascript">
+    			$(document).ready(function(){		
+    				$(".more").toggle(function() {
+    		    	$(this).text("Leer menos...").siblings(".complete").show();
+	    				}, function() {
+    			  		  $(this).text("Leer más...").siblings(".complete").hide();
+ 					   	});	
+  					  });
+			</script>
+
+			
+		</head>
+
+		<body>
+			
+
+			<header>
+				<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-togle="collapse" data-target="#navegacion-ndlp">
+								<span class="sr-only">Desplegar / Ocultar Menú</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						<a href="#" class="navbar-brand">OSEZNO PRODUCTIONS</a>
+					</div>
+
+			<!-- Aqui inicia el menu -->
+					<div class="collapse navbar-collapse" id="navegacion-ndlp">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Inicio</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Categorias <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Tecnología</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Cursos Gratuitos</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Ciencia Ficción</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Roboticá</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Animación</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Videojuegos</a></li>
+
+								</ul>
+							</li>
+
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contacto</a></li>
+						</ul>
+						<form action="" class="navbar-form navbar-right" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Buscar">
+							</div>
+							<button type="submit" class="btn btn-primary">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</form>
+
+
+					</div>
+				</nav>
+			</header>
+
+			<!-- Aqui va el jumbotron -->
+
+				<section class="jumbotron">
+					<div class="container"></div>
+						<h1 class="titulo-blog">Osezno Productions Blog</h1>
+							<p>Blog de interes para geeks</p>
+
+				</section>
+
+				<section class="main container"></section>
+					<div class="row">
+						<section class="post col-md-9">
+							<div class="miga-de-pan">
+								<ol class="breadcrumb">
+									<li><a href="#">Inicio</a></li>
+									<li><a href="#">Categorias</a></li>
+									<li class="active">Tecnología</li>
+								</ol>
+							</div>
+								<article class="post clearfix">
+								<a href="#" class="thumb pull-left">
+									<img class="img-thumbnail" src="images/tecno.jpg" alt="">
+								</a>
+								<h2 class="post-title">
+									<a href="#">Innovación en tecnología</a>
+								</h2>
+								<span class="post-fecha">03 de Febrero 2017</span> por <span class="post-autor"><a href="#">Neil David Linares P.</a></span>
+								<p id="hechoInicial" class="post-contenido text-justify">Avances tecnologicos en pro de la revolución de la humanidad. La tecnología no adquiere atributos como bueno o malom esos adjetivos se los entrega nosotros los usuarios, la mayoría de los saltos tecnologicos se dan principalmente por acciones bélicas como ......</p>
+
+								<p id="hecho" class="post-contenido text-justify" >Avances tecnologicos en pro de la revolución de la humanidad. La tecnología no adquiere atributos como bueno o malom esos adjetivos se los entrega nosotros los usuarios, la mayoría de los saltos tecnologicos se dan principalmente por acciones bélicas como fue la segunda guerra mundial con hipersalto en la aviacion , comunicación , combustibles sinteticos y un sin fin de avances que despues pasan a ser uso civil pero dentro de las mentes de gente visionaria y altruista ven en la tecnología del mañana la esperanza del presente, aunque se espere que no sea un arma de doble filo como fue el caso de alfred nobel que su invento el cual nace como mejoramiento de las operaciones mineras y de creacion de tuneles a menor costo y tiempo , en las armas más usadas por el hombre para causarse males, por eso concluyo estos articulos se centran en el esparcimiento del saber lo que dicho conocimiento como se torne en ustedes eso depende del uso que le den</p>
+
+								<div class="contenedor-botones">
+									<a href="#" class="btn btn-primary" id="Mostrar" >Leer Más</a>
+									<a href="#" class="btn btn-primary" id="Esconder" >Leer Menos</a>
+									<a href="#" class="btn btn-success">Comentarios <span class="badge">20</span></a>
+								</div>
+								</article>
+								<article class="post clearfix">
+								<a href="#" class="thumb pull-left">
+									<img class="img-thumbnail" src="images/curso.jpg" alt="">
+								</a>
+								<h2 class="post-title">
+									<a href="#">Cursos para gente que desea aprender. Libertad del saber</a>
+								</h2>
+								<p><span class="post-fecha">03 de Febrero 2017</span> por <span class="post-autor"><a href="#">Neil David Linares P.</a></span></p>
+								<span class="summary">
+								<p class="post-contenido text-justify">Desde la invención de Johannes Gutenberg : "La imprenta" es con dicho invento que hizo que el mundo cambiase radicalmente al no limitar el saber leer a las altas esferas cuyo poder adquisitivo le permitia solventar las costosas sumas de dinero que involucraba educarse y tener acceso a materiales bibliograficos ya que para la epoca las copias de libros  eran hechas a mano por eso el tiempo largo de produccion y el alto costo de produccion.
+								</p>
+								</span>
+
+								<span class="complete">
+
+								<p> Ahora que nosotros tenemos un mundo de información al alcance de un click ya que ni el idioma es barrera para aprender y con los grandes comunidades quienes comparten con gusto el saber a cualquiera que tenga las ganas de aprender y con esfuerzo afianzar dichos conocimientos para llevarlos a un grado donde aflore la creatividad, el conocimiento es poder y poder es de todos</p>
+								</span>
+
+								<span class="more">Leer más...</span>
+		
+
+								</article>
+								<article class="post clearfix">
+								<a href="#" class="thumb pull-left">
+									<img class="img-thumbnail" src="images/scifi.jpg" alt="">
+								</a>
+								<h2 class="post-title">
+									<a href="#">Ciencia Ficción o Realidad Pausible</a>
+								</h2>
+								<p><span class="post-fecha">03 de Febrero 2017</span> por <span class="post-autor"><a href="#">Neil David Linares P.</a></span></p>
+								<p class="post-contenido text-justify">Desde las épocas donde el hombre empezo a cuestionar su entorno y preguntarse es donde nacen mentes privilegiadas con una visión que incluso ahora sorprende como Jules Gabriel Verne escritor de grandiosas obras inspiradas en la pura imaginación que despertarón el ínteres de las futuras mentes con temas tales como viajes fantasticos como destino a la luna o el centro de la tierra o alrededor de ella con un grado casi apegado a la realidad actual como la idea de verne de usar barras quimicas con propiedades luminicentes ya que con el fuego no se podria explorar las cuevas y lo que en la actualidad los espeleologos usan en sus viajes a las cuevas como luces quimicas, como estas obras de ciencia ficcion hay varias como el universo de Star Wars o Gataca donde el racismo sera genético son obras de cine que dan pie a que otros sigan soñando y deleitando a las futuras generaciones.</p>
+
+								<div class="contenedor-botones">
+									<a href="#" class="btn btn-primary">Leer Más</a>
+									<a href="#" class="btn btn-success">Comentarios <span class="badge">20</span></a>
+								</div>
+								</article>
+								<article class="post clearfix">
+								<a href="#" class="thumb pull-left">
+									<img class="img-thumbnail" src="images/robo.jpg" alt="">
+								</a>
+								<h2 class="post-title">
+									<a href="#">Robotica y sus beneficios</a>
+								</h2>
+								<p><span class="post-fecha">03 de Febrero 2017</span> por <span class="post-autor"><a href="#">Neil David Linares P.</a></span></p>
+								<div class="text text-justify">
+									<div>Lo primero que la mayoria se le viene la palabra robotica son R2-D2 del universo de Star Wars o robot futuristas con inteligencia como la pelicula Chappie donde nos podemos cuestionar sobre que es la conciencia y la personalidad sino que el cumulo de memorias manejadas por nuestra humanidad y/o codigo de ético pero sin tanto eufemismo en resumen es información la cual puede ser transferida, pero más allá de pensar en cosas como la pelicula terminator se penso en las 3 leyes de Isaac Asimov en pro del bienestar humano , pero hay robot que nos ayudan a curar tal como lei en un artículo donde se usa robots para la estimulacion o implantes roboticos de alto grado de sensibilidad que devuelven la funcionalidad del paciente tanto que en las olimpiadas se cuestiono si era justo competir personas que disponian de una discapacidad y usaban protesis de alta calidad con materiales alucinantes que se ve en transbordadores de alta ligereza y durabilidad , que se crearon nuevas divisiones para aquellos super humanos. 
+									</div>
+									
+								</div><a href="#">Leer más</a>
+
+								<div class="contenedor-botones">
+									<a href="#" class="btn btn-primary">Leer Más</a>
+									<a href="#" class="btn btn-success">Comentarios <span class="badge">20</span></a>
+								</div>
+								</article>
+								<article class="post clearfix">
+								<a href="#" class="thumb pull-left">
+									<img class="img-thumbnail" src="images/animated.jpg" alt="">
+								</a>
+								<h2 class="post-title">
+									<a href="#">Animación versus realidad</a>
+								</h2>
+								<p><span class="post-fecha">03 de Febrero 2017</span>por<span class="post-autor"><a href="#">Neil David Linares P.</a></span></p>
+								<p class="post-contenido text-justify">Con el avance tecnologico de los computadores modernos como caracteristicas principales como su potencia y bajo costo hace que las animaciones cojan un nivel de foto realismo que no se puede distinguir la realidad de la ficción sin contar con los nuevos dispositivos de realidad virtual el cual nos lleva a un mundo completamente fuera de precedente, peliculas como Avatar cuya pelicula casi en su totalidad es digital escenarios , fauna, flora hasta incluso idioma navi , junto con sonido dts hace que uno no pueda evitar dejar se llevar , animaciones en 3d son lo resaltante pero que hay del 2d es su fin, en lo personal lo dudo ya que como todo arte depende de la intensidad del guion , argumentos , personajes . Un ejemplo clasico es Batman serie animada cuyo nivel de dibujo no es espectacular pero si muestra una ciudad modelo como las que hay en la actualidad .
+								Una animacion de calidad es aquella que te roba un suspiro, un grito , una emoción. </p>
+
+								<div class="contenedor-botones">
+									<a href="#" class="btn btn-primary">Leer Más</a>
+									<a href="#" class="btn btn-success">Comentarios <span class="badge">20</span></a>
+								</div>
+								</article>
+
+								<article class="post clearfix">
+								<a href="#" class="thumb pull-left">
+									<img class="img-thumbnail" src="images/game.jpg" alt="">
+								</a>
+								<h2 class="post-title">
+									<a href="#">Videojuegos: El nuevo Arte</a>
+								</h2>
+								<p><span class="post-fecha">03 de Febrero 2017</span> por <span class="post-autor"><a href="#">Neil David Linares P.</a></span></p>
+								<p class="post-contenido text-justify">Desde los primeros pixeles de pong el mundo de los videojuegos fue menos preciado a tal grado que nadie hubiera previsto que este mundo generaria las mayores ganancias , mucho más que cualquier pelicula taquillera.
+								Todo comenzo cuando aplicaron una trama a los juegos cuyo representante y pionero fue Mario World, un juego con trama, objetivo, personajes definidos y un universo conformado por tuberias y avatares que te otorgan superpoderes  fue el boom incluso ahora se crean MOD haciendolo más diverso, pero se puede considerar arte a los videojuegos , con el paso que de hecho que si ya que alberga los mismo detalles de concepto como una pelicula o libro donde se tiene una trama , guion, personajes , ambientación , hasta incluso actores de verdad los cuales dan las voces o capturas de pantalla de sus gestos para darles un alto realismo a los animaciones 3d juegos que te hacen creer que eres espia como la saga metal gear o un peleador de artes marciales como en la saga tekken o algo más sadico como DOOM donde el exito es tomar la iniciativa , los juegos no solo se evaluan en sus aspectos graficos o linea argumental sino cosas como estabilidad en los frame, efectos fisicos , maniobrabilidad y otros detalles que varian dependiendo del genero y es que si hablamos de genero por que es tan amplio los usuarios que tienes desde los que juegan candy crash o pokemon go , a los profesionales que pelean en torneo como starcraft que en korea son como los rockstar o counter strike , no es de sorprendernos que algun dia sea reconocido como arte como tal ya que en cada obra tiene su sello personal </p>
+
+								<div class="contenedor-botones">
+									<a href="#" class="btn btn-primary">Leer Más</a>
+									<a href="#" class="btn btn-success">Comentarios <span class="badge">20</span></a>
+								</div>
+							</article>
+
+							<nav>
+								<div class="center-block">
+									<ul class="pagination">
+										<li class="disabled"><a href="#">&laquo;<span class="sr-only">Anterior</span></a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li><a href="#">6</a></li>						
+										<li><a href="#">&raquo; <span class="sr-only">Siguiente</span></a></li>
+
+									</ul>
+
+								</div>
+
+							</nav>
+
+						</section>
+
+						<aside class="col-md-3 hidden-xs hidden-sm">
+							<h4>Categorias</h4>
+							<div class="list-group">
+								<a href="#" class="list-group-item active">Tecnología</a>
+								<a href="#" class="list-group-item">Cursos Gratuitos</a>
+								<a href="#" class="list-group-item">Ciencia Ficción</a>
+								<a href="#" class="list-group-item">Roboticá</a>
+								<a href="#" class="list-group-item">Animación</a>
+								<a href="#" class="list-group-item">Videojuegos</a>
+							</div>
+
+							<h4>Artículos Recientes</h4>
+							<a href="#"  class="list-group-item">
+								<h4  class="list-group-item-heading">Innovación en tecnología</h4>
+								<p  class="list-group-item-text">Avances tecnologicos en pro de la revolucion de la humanidad</p>
+							</a>
+
+							<a href="#"  class="list-group-item">
+								<h4  class="list-group-item-heading">Cursos para gente que desea aprender</h4>
+								<p  class="list-group-item-text">libertad del saber</p>
+							</a>
+
+							<a href="#"  class="list-group-item">
+								<h4  class="list-group-item-heading">Ciencia Ficción o Realidad pausible</h4>
+								<p  class="list-group-item-text">La creatividad puede ser el motor de la inventiva</p>
+							</a>
+
+							<a href="#"  class="list-group-item">
+								<h4  class="list-group-item-heading">Robotica y sus beneficios</h4>
+								<p  class="list-group-item-text">Avances que cambian vidas </p>
+							</a>
+
+							<a href="#"  class="list-group-item">
+								<h4  class="list-group-item-heading">Animación versus realidad</h4>
+								<p  class="list-group-item-text">La complejidad de programas y potencia de hardware hace posible el fotorealismo</p>
+							</a>
+
+							<a href="#"  class="list-group-item">
+								<h4  class="list-group-item-heading">Videojuegos: El nuevo arte</h4>
+								<p  class="list-group-item-text">La industria que produce millones que no es considerado aún arte</p>
+							</a>
+
+							<div id="deslizar"> Has Click Aquí </div>
+							<div id="panel">¡¡¡¡ BIENVENIDOS !!!! <p>GENTE</p>	¡¡¡¡ HACKSPACE UPGRADE!!!! <p style="font-size: 80px;">  2017 </p> </div>
+						</aside>
+
+						<footer>
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-6">
+										<p>Neil Linares P. - Osezno Productions </p>
+									</div>
+									<div class="col-xs-6">
+										<ul class="list-inline text-right">
+											<li><a href="#">Inicio</a></li>
+											<li><a href="#">Contacto</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</footer>
+
+					</div>
+		</body>
+	</html>
